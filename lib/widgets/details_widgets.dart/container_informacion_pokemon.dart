@@ -97,7 +97,7 @@ class ContainerInformacionPokemon extends StatelessWidget {
                 ),
 
                 Container(
-                  margin: EdgeInsets.only( top: 30 ),
+                  margin: EdgeInsets.only( top: size.width * 0.03 ),
                   width: size.width * 1,
                   height: size.height * 0.25,
                   // color: Colors.amber,
