@@ -18,10 +18,11 @@ class card_pokemon extends StatelessWidget {
   Widget build(BuildContext context) {
 
     final size = MediaQuery.of( context ).size;
+    double sizeG = size.height * 0.16;
 
     return Container(
       width: double.infinity,
-      height: size.height * 0.15,
+      height: size.height * 0.16,
       // color: Colors.red,
       margin: EdgeInsets.symmetric( horizontal: size.width * .044 ),
       child: Stack(
@@ -31,7 +32,7 @@ class card_pokemon extends StatelessWidget {
             bottom: 0,
             child: Container(
               width: size.width * .9,
-              height: size.height * 0.12,
+              height: size.height * 0.13,
               decoration: BoxDecoration(
                 // color: ItemBackgroundColor(pokemon.type1.toString()),
                 color: ItemBackgroundColor(pokemon.types[0].type.name.toString()),
@@ -52,16 +53,16 @@ class card_pokemon extends StatelessWidget {
 
                         Text(
                           '# ${pokemon.id}',
-                          style: const TextStyle(
-                            fontSize: 15,
+                          style: TextStyle(
+                            fontSize: ( size.height * 0.16 >  110) ? 15 : 12,
                             fontWeight: FontWeight.w700
                           ),
                         ),
 
                         Text(
                           toBeginningOfSentenceCase( pokemon.name )!,
-                          style: const TextStyle(
-                            fontSize: 25,
+                          style: TextStyle(
+                            fontSize: ( size.height * 0.16 >  110) ? 25 : 20,
                             fontWeight: FontWeight.w700,
                             color: Colors.white
                           ),

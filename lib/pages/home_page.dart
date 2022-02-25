@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage> {
                 Container(
                   margin: EdgeInsets.symmetric(horizontal: 10  ),
                   width: size.width * 1,
-                  height: size.height * 0.22,
+                  height: size.height * 0.25,
                   // color: Colors.red,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
